@@ -1,4 +1,4 @@
-if SHIELD_fine40rev1
+if SHIELD_fine40
 
 config ZMK_KEYBOARD_NAME
     default "fine!40"
