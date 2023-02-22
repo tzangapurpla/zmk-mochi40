@@ -14,19 +14,6 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
-				// -----------------------------------------------------------------------------------------
-				// |  ESC  |  Q   |  W   |  E   |  R   |  T   |   Y   |  U    |  I   |  O   |   P   | BSPC  |
-				// |  TAB  |  A   |  S   |  D   |  F   |  G   |   H   |  J    |  K   |  L   |   ;   |  '    |
-				// | SHIFT |  Z   |  X   |  C   |  V   |  B   |   N   |  M    |  ,   |  .   |   /   |  RET  |
-				// | LCTL  | LGUI | LALT |  \   | LOWR | SPC  |  RAIS | LARW | DARW | UARW  |  RARW |  P/P  |
-
-				// -----------------------------------------------------------------------------------------
-				// |  ESC  |  Q   |  W   |  E   |  R   |  T   |   B   |  V    |  C   |  X   |   Z   |  LSFT |
-				// |   Y   |  U   |  I   |  O   |  P   | BSPC |  ENT  |  /    |  .   |  ,   |   M   |   N   |
-				// |  TAB  |  A   |  S   |  D   |  F   |  G   |  SPC  |  LOWR |  \   | LALT | LGUI  |  LCTL |
-				// |   H   |  J   |  K   |  L   | SCLN | QUTE |  P/P  | RARW | UARW | DARW  |  LARW | RAISE |
-
-
 			bindings = <
 				&kp ESC   &kp Q    &kp W    &kp E    &kp R &kp T     &kp Y &kp U    &kp I     &kp O    &kp P     &kp BSPC
 				&lt 3 TAB &kp A    &kp S    &kp D    &kp F &kp G     &kp H &kp J    &kp K     &kp L    &kp SEMI  &kp SQT
