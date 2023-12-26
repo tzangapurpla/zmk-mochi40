@@ -14,11 +14,6 @@ config SSD1306_REVERSE_MODE
 
 if LVGL
 
-config LV_HOR_RES_MAX
-	default 128
-
-config LV_VER_RES_MAX
-	default 64
 
 config LV_Z_VDB_SIZE
 	default 64
