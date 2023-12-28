@@ -10,6 +10,17 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_layer1 {
+            timeout-ms = <50>;
+            key-positions = <37 41>;
+            bindings = <&mo 1>;
+        };
+    };
+};
+
+/ {
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -51,7 +62,7 @@
 				&kp GRAVE &kp N1 &kp N2     &kp N3 &kp N4 &kp N5 &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp DEL
 				&trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
 				&trans    &trans &trans     &trans &trans &trans &trans    &trans    &kp LS(N9) &kp LS(N0) &kp EXCL   &kp EQUAL
-				&trans    &mo 1  &trans     &trans &trans &trans &trans    &trans    &trans     &trans     &trans     &kp C_PP
+				&trans    &trans &trans     &trans &trans &trans &trans    &trans    &trans     &trans     &trans     &kp C_PP
 			>;
 		};
 
