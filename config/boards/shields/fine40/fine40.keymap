@@ -45,7 +45,7 @@
 				&kp LSHFT &kp LALT &trans   &trans   &trans &lt 2 SPACE &trans &trans   &kp RGUI  &kp END  &mo 3     &kp C_PP
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
 		right {
