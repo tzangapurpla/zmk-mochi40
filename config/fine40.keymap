@@ -10,6 +10,17 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+    behaviors {
+        gresc: grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+        };
+    };
+};
+
+/ {
     combos {
         compatible = "zmk,combos";
         combo_layer1 {
@@ -39,10 +50,10 @@
 
 
 			bindings = <
-				&kp ESC   &kp Q    &kp W    &kp E    &kp R  &kp T       &kp Y  &kp U    &kp I     &kp O    &kp P     &kp BSPC
+				&gresc    &kp Q    &kp W    &kp E    &kp R  &kp T       &kp Y  &kp U    &kp I     &kp O    &kp P     &kp BSPC
 				&kp TAB	  &kp A    &kp S    &kp D    &kp F  &kp G       &kp H  &kp J    &kp K     &kp L    &kp SEMI  &kp SQT
 				&kp LCTL  &kp Z    &kp X    &kp C    &kp V  &kp B       &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH  &kp RET
-				&kp LSHFT &kp LALT &trans   &trans   &trans &lt 2 SPACE &trans &trans   &kp RGUI  &kp END  &mo 3     &kp C_PP
+				&kp LSHFT &kp LALT &trans   &trans   &trans &kp SPACE   &trans &trans   &lt 2 END  &kp RGUI &mo 3     &kp C_PP
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
