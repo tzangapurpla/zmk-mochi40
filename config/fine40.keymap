@@ -32,6 +32,39 @@
 };
 
 / {
+    behaviors {
+        rightforward: right_forward {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&kp C_AC_FORWARD>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        uppgup: up_pgup {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp UP>, <&kp PG_UP>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        downpgdown: down_pgdown {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN>, <&kp PG_DOWN>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
     combos {
         compatible = "zmk,combos";
         combo_layer1 {
@@ -72,10 +105,10 @@
 
 		right {
 			bindings = <
-				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6) &kp DEL
-				&trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans     &kp PIPE
-				&trans  	&trans      &kp LS(N5) &trans     &trans        &trans     &kp LS(N3) &trans     &kp LBKT      &kp RBKT     &kp UP     &kp EQUAL
-				&trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &kp DOWN     &kp RIGHT  &kp K_CMENU
+				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6)     &kp DEL
+				&trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans         &kp PIPE
+				&trans  	&trans      &kp LS(N5) &trans     &trans        &trans     &kp LS(N3) &trans     &kp LBKT      &kp RBKT     &uppgup        &kp EQUAL
+				&trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
 			>;
 		};
 
