@@ -32,15 +32,6 @@
 };
 
 / {
-    behaviors {
-          td44: tap_dance_44 {
-              compatible = "zmk,behavior-tap-dance";
-              #binding-cells = <44>;
-              tapping-term-ms = <200>;
-              bindings = <&kp LEFT>, <&kp C_AC_BACK>;
-            };
-        };
-
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -67,7 +58,14 @@
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
-
+    behaviors {
+          td44: tap_dance_44 {
+              compatible = "zmk,behavior-tap-dance";
+              #binding-cells = <44>;
+              tapping-term-ms = <200>;
+              bindings = <&kp LEFT>, <&kp C_AC_BACK>;
+            };
+        };
 		right {
 			bindings = <
 				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6) &kp DEL
