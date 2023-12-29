@@ -32,6 +32,28 @@
 };
 
 / {
+    behaviors {
+        td12: tap_dance_12 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <12>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT>, <&kp C_AC_BACK>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        td12: tap_dance_14 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <14>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RIGHT>, <&kp C_AC_FORWARD>;
+        };
+    };
+};
+
+/ {
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -64,10 +86,8 @@
 				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6) &kp DEL
 				&trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans     &kp PIPE
 				&trans  	&trans      &kp LS(N5) &trans     &trans        &trans     &kp LS(N3) &trans     &kp LBKT      &kp RBKT     &kp UP     &kp EQUAL
-				&trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &kp LEFT      &kp DOWN     &kp RIGHT  &kp K_CMENU
+				&trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &td12         &kp DOWN     &td14      &kp K_CMENU
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_AC_BACK C_AC_FORWARD>;
 		};
 
 		left {
