@@ -32,6 +32,17 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_AC_BACK {
+            timeout-ms = <80>;
+            key-positions = <36 37 41>;
+            bindings = <&kp C_AC_BACK>;
+        };
+    };
+};
+
+/ {
 	keymap {
 		compatible = "zmk,keymap";
 
