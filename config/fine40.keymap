@@ -26,7 +26,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp C_AC_BACK>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
         };
     };
 };
@@ -37,7 +37,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp C_AC_FORWARD>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
         };
     };
 };
@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp UP>, <&kp PG_UP>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
         };
     };
 };
@@ -59,7 +59,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOWN>, <&kp PG_DN>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
         };
     };
 };
@@ -96,8 +96,8 @@
 			bindings = <
 				&gresc    &kp Q    &kp W    &kp E    &kp R  &kp T       &kp Y  &kp U    &kp I     &kp O    &kp P     &kp BSPC
 				&kp TAB	  &kp A    &kp S    &kp D    &kp F  &kp G       &kp H  &kp J    &kp K     &kp L    &kp SEMI  &kp SQT
-				&kp LCTL  &kp Z    &kp X    &kp C    &kp V  &kp B       &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH  &kp RET
-			     	&kp LSHFT &kp LALT &trans   &trans   &trans &lt 2 SPACE &trans &trans   &kp RGUI  &kp END  &mo 3     &kp C_PP
+				&kp LSHFT &kp Z    &kp X    &kp C    &kp V  &kp B       &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH  &kp RET
+			     	&kp LCTL  &kp LALT &trans   &trans   &trans &lt 2 SPACE &trans &trans   &kp RGUI  &kp END  &mo 3     &kp C_PP
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
