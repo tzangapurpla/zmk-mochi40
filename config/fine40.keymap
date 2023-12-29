@@ -24,7 +24,7 @@
     behaviors {
         leftback: left_back {
             compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <44>;
+            #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp C_AC_BACK>;
             mods = <(MOD_LSFT)>;
         };
