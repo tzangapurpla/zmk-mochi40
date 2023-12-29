@@ -67,7 +67,7 @@
 				&trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &kp LEFT      &kp DOWN     &kp RIGHT  &kp K_CMENU
 			>;
 
-			sensor-bindings = <&inc_dec_kp TAB TAB>;
+			sensor-bindings = <&inc_dec_kp C_AC_BACK C_AC_FORWARD>;
 		};
 
 		left {
