@@ -44,7 +44,7 @@
 
 / {
     behaviors {
-        td12: tap_dance_14 {
+        td14: tap_dance_14 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <14>;
             tapping-term-ms = <200>;
