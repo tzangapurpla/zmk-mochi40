@@ -87,6 +87,17 @@
 //};
 
 / {
+    behaviors {
+        tdaltlayer5: tap_dance_alt_layer5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LALT>, <&mt 5 LALT>;
+        };
+    };
+};
+
+/ {
     combos {
         compatible = "zmk,combos";
         combo_layer1 {
@@ -119,7 +130,7 @@
 				&gresc    &kp Q    &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I     &kp O    &kp P     &kp BSPC
 				&kp TAB	  &kp A    &kp S    &kp D    &kp F  &kp G        &kp H  &kp J    &kp K     &kp L    &kp SEMI  &kp SQT
 				&kp LSHFT &kp Z    &kp X    &kp C    &kp V  &kp B        &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH  &kp RET
-			     	&kp LCTL  &kp LALT &trans   &trans   &trans &lt 2 SPACE  &trans &trans   &kp RGUI  &kp END  &mo 3     &tog 4
+			     	&kp LCTL  &kp LALT &trans   &trans   &trans &lt 2 SPACE  &trans &trans   &kp RGUI  &kp END  &mo 3     &to 4
 			    // 	&kp LCTL  &kp LALT &trans   &trans   &trans &spacelayers &trans &trans   &kp RGUI  &kp END  &mo 3     &to 4
 			>;
 
@@ -155,11 +166,11 @@
 
 		game_4 {
 			bindings = <
-				&gresc    &kp Q    &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I      &kp O      &kp P     &kp BSPC
-				&kp TAB	  &kp A    &kp S    &kp D    &kp F  &kp G        &kp H  &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
-				&kp LSHFT &kp Z    &kp X    &kp C    &kp V  &kp B        &kp N  &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RET
-			     	&kp LCTL  &kp LALT &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 6 RGUI &kp END    &mo 7     &tog 4
-			    //  &kp LCTL  &kp LALT &trans   &trans   &trans &spacelayer5 &trans &trans   &lt 6 RGUI &kp END    &mo 7     &to 0
+				&gresc    &kp Q        &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I      &kp O      &kp P     &kp BSPC
+				&kp TAB	  &kp A        &kp S    &kp D    &kp F  &kp G        &kp H  &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
+				&kp LSHFT &kp Z        &kp X    &kp C    &kp V  &kp B        &kp N  &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RET
+			     	&kp LCTL  &tdaltlayer5 &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 6 RGUI &kp END    &mo 7     &to 0
+			    //  &kp LCTL  &kp LALT     &trans   &trans   &trans &spacelayer5 &trans &trans   &lt 6 RGUI &kp END    &mo 7     &to 0
 			>;
 		};
 
