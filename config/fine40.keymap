@@ -70,7 +70,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&mo 5>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LALT)>;
         };
     };
 };
@@ -90,7 +90,7 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		default_layer {
+		default_layer_0 {
 				// -----------------------------------------------------------------------------------------
 				// |  ESC  |  Q   |  W   |  E   |  R   |  T   |   Y   |  U    |  I   |  O   |   P   | BSPC  |
 				// |  TAB  |  A   |  S   |  D   |  F   |  G   |   H   |  J    |  K   |  L   |   ;   |  '    |
@@ -132,7 +132,7 @@
 			>;
 		};
 
-		control {
+		control_3 {
 			bindings = <
 				&sys_reset &kp F1       &kp F2     &kp F3     &kp F4     &kp F5  &kp F6     &kp F7   &kp F8  &kp F9     &kp F10 &kp DEL
 				&trans 	   &kp F11	&kp F12    &trans     &trans     &trans  &bt BT_PRV &trans   &trans  &bt BT_NXT &trans  &trans
@@ -141,7 +141,7 @@
 			>;
 		};
 
-		game {
+		game_4 {
 			bindings = <
 				&gresc    &kp Q    &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I      &kp O    &kp P     &kp BSPC
 				&kp TAB	  &kp A    &kp S    &kp D    &kp F  &kp G        &kp H  &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
@@ -150,7 +150,7 @@
 			>;
 		};
 
-		game_symbol {
+		game_symbol_5 {
 			bindings = <
 				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6)     &kp DEL
 				&trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans         &kp PIPE
@@ -159,7 +159,7 @@
 			>;
 		};
 
-		game_number {
+		game_number_6 {
 			bindings = <
 				&kp GRAVE &kp N1 &kp N2     &kp N3 &kp N4 &kp N5 &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp DEL
 				&trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
@@ -168,7 +168,7 @@
 			>;
 		};
 
-		game_fn {
+		game_fn_7 {
 			bindings = <
 				&trans     &kp F1       &kp F2     &kp F3     &kp F4     &kp F5  &kp F6     &kp F7   &kp F8  &kp F9     &kp F10 &kp DEL
 				&trans 	   &kp F11	&kp F12    &trans     &trans     &trans  &trans     &trans   &trans  &trans     &trans  &trans
