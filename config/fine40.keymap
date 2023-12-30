@@ -103,22 +103,23 @@
         combo_layer1 {
             timeout-ms = <50>;
             key-positions = <37 41>;
+	    layers = <-1>;
             bindings = <&mo 1>;
         };
     };
 };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_layer5 {
-            timeout-ms = <50>;
-            key-positions = <37 41>;
-	    layers = <4>;
-            bindings = <&mo 5>;
-        };
-    };
-};
+// {
+//    combos {
+//        compatible = "zmk,combos";
+//        combo_layer5 {
+//            timeout-ms = <50>;
+//            key-positions = <37 41>;
+//	    layers = <4>;
+//            bindings = <&mo 5>;
+//        };
+//    };
+//};
 
 / {
 	keymap {
