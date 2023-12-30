@@ -108,17 +108,17 @@
     };
 };
 
-// {
-//    combos {
-//        compatible = "zmk,combos";
-//        combo_layer5 {
-//            timeout-ms = <50>;
-//            key-positions = <37 41>;
-//	    layers = <4>
-//            bindings = <&mo 5>;
-//        };
-//    };
-//};
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_layer5 {
+            timeout-ms = <50>;
+            key-positions = <37 41>;
+	    layers = <4>;
+            bindings = <&mo 5>;
+        };
+    };
+};
 
 / {
 	keymap {
@@ -151,7 +151,7 @@
 
 		layer_1 {
 			bindings = <
-				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6)     &kp DEL
+				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6)     &kp BSPC
 				&trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans         &kp PIPE
 				&trans  	&trans      &kp LS(N5) &trans     &trans        &trans     &kp LS(N3) &trans     &kp LBKT      &kp RBKT     &uppgup        &kp EQUAL
 				&trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
@@ -189,7 +189,7 @@
 
 		game_symbol_5 {
 			bindings = <
-				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6)     &kp DEL
+				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6)     &kp BSPC
 				&trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans         &kp PIPE
 				&trans  	&trans      &kp LS(N5) &trans     &trans        &trans     &kp LS(N3) &trans     &kp LBKT      &kp RBKT     &uppgup        &kp EQUAL
 				&trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
