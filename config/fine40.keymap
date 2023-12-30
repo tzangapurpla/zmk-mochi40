@@ -86,16 +86,16 @@
 //    };
 //};
 
-/ {
-    behaviors {
-        tdaltlayer5: tap_dance_alt_layer5 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LALT>, <&mo 5>;
-        };
-    };
-};
+// {
+//    behaviors {
+//        tdaltlayer5: tap_dance_alt_layer5 {
+//            compatible = "zmk,behavior-tap-dance";
+//            #binding-cells = <0>;
+//            tapping-term-ms = <200>;
+//            bindings = <&kp LALT>, <&mo 5>;
+//        };
+//    };
+//};
 
 / {
     combos {
@@ -104,6 +104,18 @@
             timeout-ms = <50>;
             key-positions = <37 41>;
             bindings = <&mo 1>;
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_layer5 {
+            timeout-ms = <50>;
+            key-positions = <37 41>;
+	    layers = <4>
+            bindings = <&mo 5>;
         };
     };
 };
@@ -169,7 +181,8 @@
 				&gresc    &kp Q        &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I      &kp O      &kp P     &kp BSPC
 				&kp TAB	  &kp A        &kp S    &kp D    &kp F  &kp G        &kp H  &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
 				&kp LSHFT &kp Z        &kp X    &kp C    &kp V  &kp B        &kp N  &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RET
-			     	&kp LCTL  &tdaltlayer5 &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 6 RGUI &kp END    &mo 7     &to 0
+			     	&kp LCTL  &kp LALT     &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 6 RGUI &kp END    &mo 7     &to 0
+			    // 	&kp LCTL  &tdaltlayer5 &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 6 RGUI &kp END    &mo 7     &to 0
 			    //  &kp LCTL  &kp LALT     &trans   &trans   &trans &spacelayer5 &trans &trans   &lt 6 RGUI &kp END    &mo 7     &to 0
 			>;
 		};
