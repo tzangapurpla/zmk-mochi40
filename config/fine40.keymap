@@ -91,7 +91,7 @@
         tdaltlayer5: tap_dance_alt_layer5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp LALT>, <&mo 5>;
         };
     };
