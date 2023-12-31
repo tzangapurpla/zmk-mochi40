@@ -180,7 +180,7 @@
         combo_layer1 {
             timeout-ms = <50>;
             key-positions = <37 41>;
-//	    slow-release = <"true">;
+	    slow-release;
 	    layers = <0>;
             bindings = <&mo 1>;
         };
@@ -193,6 +193,7 @@
         combo_layer5 {
             timeout-ms = <50>;
             key-positions = <37 41>;
+	    slow-release;
 	    layers = <4>;
             bindings = <&mo 5>;
         };
