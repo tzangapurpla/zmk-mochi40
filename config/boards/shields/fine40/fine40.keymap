@@ -265,8 +265,6 @@
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_MENU_UP C_MENU_DOWN>;
 		};
 
 		control_3 {
@@ -305,8 +303,6 @@
 				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_MENU_UP C_MENU_DOWN>;
 		};
 
 		game_fn_7 {
