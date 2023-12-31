@@ -261,7 +261,7 @@
 				// &trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &kp LBKT  &kp RBKT    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &kp LBRC  &kp RBRC    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
 		};
