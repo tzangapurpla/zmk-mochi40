@@ -259,10 +259,10 @@
 				// &trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans         &kp PIPE
 				// &trans  	&trans      &kp LS(N5) &trans     &trans        &trans     &kp LS(N3) &trans     &kp LBKT      &kp RBKT     &uppgup        &kp EQUAL
 				// &trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &bspcdel
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &kp LBRC  &kp RBRC    &uppgup       &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &leftback &downpgdown &rightforward &kp K_CMENU
+				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
+				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 
 			>;
 
@@ -300,10 +300,10 @@
 
 		game_nav_6 {
 			bindings = <
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &bspcdel
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &kp LBRC  &kp RBRC    &uppgup       &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &leftback &downpgdown &rightforward &kp K_CMENU
+				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
+				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
