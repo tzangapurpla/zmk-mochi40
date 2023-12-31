@@ -230,7 +230,7 @@
 
 
 			bindings = <
-				&gresc    &kp Q    &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I     &kp O    &kp P     &kp BSPC
+				&gresc    &kp Q    &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I     &kp O    &kp P     &bspcdel
 				&kp TAB	  &kp A    &kp S    &kp D    &kp F  &kp G        &kp H  &kp J    &kp K     &kp L    &kp SEMI  &kp SQT
 				&kp LSHFT &kp Z    &kp X    &kp C    &kp V  &kp B        &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH  &kp RET
 			     	&kp LCTL  &kp LALT &trans   &trans   &trans &lt 2 SPACE  &trans &trans   &kp RGUI  &kp END  &mo 3     &to 4
@@ -240,21 +240,29 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
-		layer_1 {
+		nav_1 {
 			bindings = <
-				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6)     &kp BSPC
-				&trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans         &kp PIPE
-				&trans  	&trans      &kp LS(N5) &trans     &trans        &trans     &kp LS(N3) &trans     &kp LBKT      &kp RBKT     &uppgup        &kp EQUAL
-				&trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
+				// &kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6)     &kp BSPC
+				// &trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans         &kp PIPE
+				// &trans  	&trans      &kp LS(N5) &trans     &trans        &trans     &kp LS(N3) &trans     &kp LBKT      &kp RBKT     &uppgup        &kp EQUAL
+				// &trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &bspcdel
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &kp LBKT  &kp RBKT    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
 		};
 
-		layer_2 {
+		numsymb_2 {
 			bindings = <
-				&kp GRAVE &kp N1 &kp N2     &kp N3 &kp N4 &kp N5 &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp DEL
-				&trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
-				&trans    &trans &trans     &trans &trans &trans &trans    &trans    &kp LS(N9) &kp LS(N0) &kp EXCL   &kp EQUAL
-				&trans    &trans &trans     &trans &trans &trans &trans    &trans    &trans     &trans     &trans     &kp C_PP
+				// &kp GRAVE &kp N1 &kp N2     &kp N3 &kp N4 &kp N5 &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp DEL
+				// &trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
+				// &trans    &trans &trans     &trans &trans &trans &trans    &trans    &kp LS(N9) &kp LS(N0) &kp EXCL   &kp EQUAL
+				// &trans    &trans &trans     &trans &trans &trans &trans    &trans    &trans     &trans     &trans     &kp C_PP
+				&kp GRAVE &kp N1     &kp 2      &threeamps  &kp 4  &kp 5  &kp 6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
+				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
+				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
+				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &trans     &trans    &trans     &kp C_PP
 			>;
 		};
 
@@ -269,7 +277,7 @@
 
 		game_4 {
 			bindings = <
-				&gresc    &kp Q        &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I      &kp O      &kp P     &kp BSPC
+				&gresc    &kp Q        &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I      &kp O      &kp P     &bspcdel
 				&kp TAB	  &kp A        &kp S    &kp D    &kp F  &kp G        &kp H  &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
 				&kp LSHFT &kp Z        &kp X    &kp C    &kp V  &kp B        &kp N  &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RET
 			     	&kp LCTL  &kp LALT     &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 6 RGUI &kp END    &mo 7     &to 0
@@ -278,21 +286,21 @@
 			>;
 		};
 
-		game_symbol_5 {
+		game_nav_5 {
 			bindings = <
-				&kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6)     &kp BSPC
-				&trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans         &kp PIPE
-				&trans  	&trans      &kp LS(N5) &trans     &trans        &trans     &kp LS(N3) &trans     &kp LBKT      &kp RBKT     &uppgup        &kp EQUAL
-				&trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &bspcdel
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &kp LBKT  &kp RBKT    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
 		};
 
-		game_number_6 {
+		game_numbsymb_6 {
 			bindings = <
-				&kp GRAVE &kp N1 &kp N2     &kp N3 &kp N4 &kp N5 &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp DEL
-				&trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
-				&trans    &trans &trans     &trans &trans &trans &trans    &trans    &kp LS(N9) &kp LS(N0) &kp EXCL   &kp EQUAL
-				&trans    &trans &trans     &trans &trans &trans &trans    &trans    &trans     &trans     &trans     &kp C_PP
+				&kp GRAVE &kp N1     &kp 2      &threeamps  &kp 4  &kp 5  &kp 6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
+				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
+				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
+				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &trans     &trans    &trans     &kp C_PPP
 			>;
 		};
 
