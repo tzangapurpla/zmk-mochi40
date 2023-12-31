@@ -300,7 +300,7 @@
 				&kp GRAVE &kp N1     &kp 2      &threeamps  &kp 4  &kp 5  &kp 6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
 				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
-				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &trans     &trans    &trans     &kp C_PPP
+				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &trans     &trans    &trans     &kp C_PP
 			>;
 		};
 
