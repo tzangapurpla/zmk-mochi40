@@ -266,7 +266,7 @@
 
 			>;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
 		};
 
 		control_3 {
@@ -306,7 +306,7 @@
 				&trans &trans &trans &trans &trans &trans &trans &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
 		};
 
 		game_fn_7 {
