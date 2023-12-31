@@ -64,6 +64,83 @@
     };
 };
 
+/ {
+    behaviors {
+        threeamps: three_amps {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N3>, <&kp AMPS>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        sevenunder: seven_under {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp UNDER>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        eightexcl: eight_excl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp EXCL>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        zerocaret: zero_caret {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp CARET>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        lparlbkt: lpar_lbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp LBKT>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        rparrbkt: rpar_rbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp RBKT>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        bslhexcl: bslh_excl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH>, <&kp EXCL>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
 // {
 //    behaviors {
 //        spacelayer5: space_layer5 {
