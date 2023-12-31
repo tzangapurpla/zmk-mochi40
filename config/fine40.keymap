@@ -69,7 +69,7 @@
         threeamps: three_amps {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 3>, <&kp AMPS>;
+            bindings = <&kp N3>, <&kp AMPS>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -80,7 +80,7 @@
         sevenunder: seven_under {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 7>, <&kp UNDER>;
+            bindings = <&kp N7>, <&kp UNDER>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -91,7 +91,7 @@
         eightexcl: eight_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 8>, <&kp EXCL>;
+            bindings = <&kp N8>, <&kp EXCL>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -102,7 +102,7 @@
         zerocaret: zero_caret {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp 0>, <&kp CARET>;
+            bindings = <&kp N0>, <&kp CARET>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -246,7 +246,7 @@
 				// &trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
 				// &trans    &trans &trans     &trans &trans &trans &trans    &trans    &kp LS(N9) &kp LS(N0) &kp EXCL   &kp EQUAL
 				// &trans    &trans &trans     &trans &trans &trans &trans    &trans    &trans     &trans     &trans     &kp C_PP
-				&kp GRAVE &kp N1     &kp 2      &threeamps  &kp 4  &kp 5  &kp 6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
+				&kp GRAVE &kp N1     &kp N2      &threeamps  &kp N4  &kp N5  &kp N6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
 				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
 				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &trans     &trans    &trans     &kp C_PP
@@ -288,7 +288,7 @@
 
 		game_numsymb_5 {
 			bindings = <
-				&kp GRAVE &kp N1     &kp 2      &threeamps  &kp 4  &kp 5  &kp 6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
+				&kp GRAVE &kp N1     &kp 2      &threeamps  &kp N4  &kp N5  &kp N6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
 				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
 				&trans    &trans     &trans     &trans      &trans &trans &trans    &trans      &trans     &trans    &trans     &kp C_PP
