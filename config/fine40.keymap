@@ -103,7 +103,7 @@
         combo_layer1 {
             timeout-ms = <50>;
             key-positions = <37 41>;
-	    slow-release = true;
+	    slow-release = <(true)>;
 	    layers = <0>;
             bindings = <&mo 1>;
         };
