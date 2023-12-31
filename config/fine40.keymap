@@ -80,7 +80,7 @@
         sevenunder: seven_under {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N7>, <&kp UNDER>;
+            bindings = <&kp 7>, <&kp UNDER>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -91,7 +91,7 @@
         eightexcl: eight_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N8>, <&kp EXCL>;
+            bindings = <&kp 8>, <&kp EXCL>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -102,7 +102,18 @@
         zerocaret: zero_caret {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N0>, <&kp CARET>;
+            bindings = <&kp 0>, <&kp CARET>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        bspcdel: bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT)>;
         };
     };
