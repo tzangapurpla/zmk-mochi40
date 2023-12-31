@@ -263,7 +263,10 @@
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans      &trans        &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &kp LBRC  &kp RBRC    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &leftback &downpgdown &rightforward &kp K_CMENU
+
 			>;
+
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 		};
 
 		control_3 {
@@ -302,6 +305,8 @@
 				&trans &trans &trans &trans &trans &trans &trans &trans &kp LBRC  &kp RBRC    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
+
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 		};
 
 		game_fn_7 {
