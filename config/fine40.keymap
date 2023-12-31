@@ -69,7 +69,7 @@
         threeamps: three_amps {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N3>, <&kp AMPS>;
+            bindings = <&kp 3>, <&kp AMPS>;
             mods = <(MOD_LSFT)>;
         };
     };
