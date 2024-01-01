@@ -20,27 +20,27 @@
     };
 };
 
-// {
-//    behaviors {
-//        leftback: left_back {
-//            compatible = "zmk,behavior-mod-morph";
-//            #binding-cells = <0>;
-//            bindings = <&kp LEFT>, <&kp C_AC_BACK>;
-//            mods = <(MOD_LSFT|MOD_LCTL)>;
-//        };
-//    };
-//};
+/ {
+    behaviors {
+        leftback: left_back {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT>, <&kp C_AC_BACK>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
+        };
+    };
+};
 
-// {
-//    behaviors {
-//        rightforward: right_forward {
-//            compatible = "zmk,behavior-mod-morph";
-//            #binding-cells = <0>;
-//            bindings = <&kp RIGHT>, <&kp C_AC_FORWARD>;
-//            mods = <(MOD_LSFT|MOD_LCTL)>;
-//        };
-//    };
-//};
+/ {
+    behaviors {
+        rightforward: right_forward {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&kp C_AC_FORWARD>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
+        };
+    };
+};
 
 / {
     behaviors {
@@ -198,11 +198,11 @@
 
 // {
 //    behaviors {
-//        tdaltlayer5: tap_dance_alt_layer5 {
+//        tdaltlayer6: tap_dance_alt_layer6 {
 //            compatible = "zmk,behavior-tap-dance";
 //            #binding-cells = <0>;
 //            tapping-term-ms = <200>;
-//            bindings = <&kp LALT>, <&mo 5>;
+//            bindings = <&kp LALT>, <&mo 6>;
 //        };
 //    };
 //};
@@ -283,8 +283,7 @@
 				// &trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
 				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
-			//	&trans &trans &trans &trans &trans &trans &trans    &trans &lbrc     &rbrc       &uppgup       &trans
-				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &lbrc  &rbrc    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 
 			>;
@@ -306,7 +305,7 @@
 				&kp LSHFT &kp Z        &kp X    &kp C    &kp V  &kp B        &kp N  &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RET
 			     	&kp LCTL  &kp LALT     &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
 			    // 	&kp LCTL  &tdaltlayer6 &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
-			    //  &kp LCTL  &kp LALT     &trans   &trans   &trans &spacelayer5 &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
+			    //  &kp LCTL  &kp LALT     &trans   &trans   &trans &spacelayer6 &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
 			>;
 		};
 
@@ -323,8 +322,7 @@
 			bindings = <
 				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
-			//	&trans &trans &trans &trans &trans &trans &trans    &trans &lbrc     &rbrc       &uppgup       &trans
-				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &lbrc  &rbrc    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
 		};
