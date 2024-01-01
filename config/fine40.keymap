@@ -26,7 +26,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp C_AC_BACK>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 };
@@ -37,7 +37,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp C_AC_FORWARD>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 };
@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp UP>, <&kp PG_UP>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 };
@@ -59,7 +59,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOWN>, <&kp PG_DN>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 };
