@@ -20,27 +20,27 @@
     };
 };
 
-/ {
-    behaviors {
-        leftback: left_back {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT>, <&kp C_AC_BACK>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
-        };
-    };
-};
+// {
+//    behaviors {
+//        leftback: left_back {
+//            compatible = "zmk,behavior-mod-morph";
+//            #binding-cells = <0>;
+//            bindings = <&kp LEFT>, <&kp C_AC_BACK>;
+//            mods = <(MOD_LSFT|MOD_LCTL)>;
+//        };
+//    };
+//};
 
-/ {
-    behaviors {
-        rightforward: right_forward {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT>, <&kp C_AC_FORWARD>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
-        };
-    };
-};
+// {
+//    behaviors {
+//        rightforward: right_forward {
+//            compatible = "zmk,behavior-mod-morph";
+//            #binding-cells = <0>;
+//            bindings = <&kp RIGHT>, <&kp C_AC_FORWARD>;
+//            mods = <(MOD_LSFT|MOD_LCTL)>;
+//        };
+//    };
+//};
 
 / {
     behaviors {
@@ -283,7 +283,8 @@
 				// &trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
 				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
-				&trans &trans &trans &trans &trans &trans &trans    &trans &lbrc     &rbrc       &uppgup       &trans
+			//	&trans &trans &trans &trans &trans &trans &trans    &trans &lbrc     &rbrc       &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 
 			>;
@@ -322,7 +323,8 @@
 			bindings = <
 				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
-				&trans &trans &trans &trans &trans &trans &trans    &trans &lbrc     &rbrc       &uppgup       &trans
+			//	&trans &trans &trans &trans &trans &trans &trans    &trans &lbrc     &rbrc       &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
 		};
