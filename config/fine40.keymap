@@ -88,10 +88,10 @@
 
 / {
     behaviors {
-        eightexcl: eight_excl {
+        eightpipe: eight_pipe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N8>, <&kp EXCL>;
+            bindings = <&kp N8>, <&kp PIPE>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -246,7 +246,7 @@
 				// &trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
 				// &trans    &trans &trans     &trans &trans &trans &trans    &trans    &kp LS(N9) &kp LS(N0) &kp EXCL   &kp EQUAL
 				// &trans    &trans &trans     &trans &trans &trans &trans    &trans    &trans     &trans     &trans     &kp C_PP
-				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
+				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightpipe &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS  &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
 				&trans    &trans     &kp LS(N5) &trans      &trans &trans &kp LS(N3) &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
 				&trans    &trans     &trans     &trans      &trans &trans &trans     &trans      &trans     &trans    &trans     &kp C_PP
@@ -289,7 +289,7 @@
 
 		game_numsymb_5 {
 			bindings = <
-				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
+				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightpipe &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS  &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
 				&trans    &trans     &kp LS(N5) &trans      &trans &trans &kp LS(N3) &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
 				&trans    &trans     &trans     &trans      &trans &trans &trans     &trans      &trans     &trans    &trans     &kp C_PP
