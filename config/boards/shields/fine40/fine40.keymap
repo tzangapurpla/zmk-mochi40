@@ -88,10 +88,10 @@
 
 / {
     behaviors {
-        eightexcl: eight_excl {
+        eightpipe: eight_pipe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N8>, <&kp EXCL>;
+            bindings = <&kp N8>, <&kp PIPE>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -148,6 +148,28 @@
             #binding-cells = <0>;
             bindings = <&kp BSLH>, <&kp EXCL>;
             mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        lbrcmod: lbrc_with_lctl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp LBRC>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        rbrcmod: rbrc_with_lctl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC>, <&kp RBRC>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
         };
     };
 };
@@ -246,7 +268,7 @@
 				// &trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
 				// &trans    &trans &trans     &trans &trans &trans &trans    &trans    &kp LS(N9) &kp LS(N0) &kp EXCL   &kp EQUAL
 				// &trans    &trans &trans     &trans &trans &trans &trans    &trans    &trans     &trans     &trans     &kp C_PP
-				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
+				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightpipe &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS  &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
 				&trans    &trans     &kp LS(N5) &trans      &trans &trans &kp LS(N3) &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
 				&trans    &trans     &trans     &trans      &trans &trans &trans     &trans      &trans     &trans    &trans     &kp C_PP
@@ -261,7 +283,7 @@
 				// &trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
 				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
-				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &lbrcmod  &rbrcmod    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 
 			>;
@@ -281,7 +303,7 @@
 				&gresc    &kp Q        &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I      &kp O      &kp P     &kp BSPC
 				&kp TAB	  &kp A        &kp S    &kp D    &kp F  &kp G        &kp H  &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
 				&kp LSHFT &kp Z        &kp X    &kp C    &kp V  &kp B        &kp N  &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RET
-			     	&kp LCTL  &kp LALT     &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
+			     	&kp LCTL  &kp LALT     &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 5 RGUI &kp END    &mo 3     &to 0
 			    // 	&kp LCTL  &tdaltlayer6 &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
 			    //  &kp LCTL  &kp LALT     &trans   &trans   &trans &spacelayer6 &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
 			>;
@@ -289,7 +311,7 @@
 
 		game_numsymb_5 {
 			bindings = <
-				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
+				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightpipe &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS  &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
 				&trans    &trans     &kp LS(N5) &trans      &trans &trans &kp LS(N3) &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
 				&trans    &trans     &trans     &trans      &trans &trans &trans     &trans      &trans     &trans    &trans     &kp C_PP
@@ -300,7 +322,7 @@
 			bindings = <
 				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
-				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &lbrcmod  &rbrcmod    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
 		};
