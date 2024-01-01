@@ -88,10 +88,10 @@
 
 / {
     behaviors {
-        eightexcl: eight_excl {
+        eightpipe: eight_pipe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N8>, <&kp EXCL>;
+            bindings = <&kp N8>, <&kp PIPE>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -176,11 +176,11 @@
 
 // {
 //    behaviors {
-//        tdaltlayer6: tap_dance_alt_layer6 {
+//        tdaltlayer5: tap_dance_alt_layer5 {
 //            compatible = "zmk,behavior-tap-dance";
 //            #binding-cells = <0>;
 //            tapping-term-ms = <200>;
-//            bindings = <&kp LALT>, <&mo 6>;
+//            bindings = <&kp LALT>, <&mo 5>;
 //        };
 //    };
 //};
@@ -246,7 +246,7 @@
 				// &trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
 				// &trans    &trans &trans     &trans &trans &trans &trans    &trans    &kp LS(N9) &kp LS(N0) &kp EXCL   &kp EQUAL
 				// &trans    &trans &trans     &trans &trans &trans &trans    &trans    &trans     &trans     &trans     &kp C_PP
-				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
+				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightpipe &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS  &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
 				&trans    &trans     &kp LS(N5) &trans      &trans &trans &kp LS(N3) &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
 				&trans    &trans     &trans     &trans      &trans &trans &trans     &trans      &trans     &trans    &trans     &kp C_PP
@@ -283,13 +283,13 @@
 				&kp LSHFT &kp Z        &kp X    &kp C    &kp V  &kp B        &kp N  &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp RET
 			     	&kp LCTL  &kp LALT     &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
 			    // 	&kp LCTL  &tdaltlayer6 &trans   &trans   &trans &kp SPACE    &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
-			    //  &kp LCTL  &kp LALT     &trans   &trans   &trans &spacelayer6 &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
+			    //  &kp LCTL  &kp LALT     &trans   &trans   &trans &spacelayer5 &trans &trans   &lt 5 RGUI &kp END    &mo 7     &to 0
 			>;
 		};
 
 		game_numsymb_5 {
 			bindings = <
-				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightexcl &kp N9    &zerocaret &kp DEL
+				&kp GRAVE &kp N1     &kp N2     &threeamps  &kp N4 &kp N5 &kp N6     &sevenunder &eightpipe &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &trans      &trans &trans &kp MINUS  &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
 				&trans    &trans     &kp LS(N5) &trans      &trans &trans &kp LS(N3) &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
 				&trans    &trans     &trans     &trans      &trans &trans &trans     &trans      &trans     &trans    &trans     &kp C_PP
