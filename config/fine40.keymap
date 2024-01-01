@@ -152,6 +152,28 @@
     };
 };
 
+/ {
+    behaviors {
+        lbrcmod: lbrc_with_lctl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp LBRC>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        rbrcmod: rbrc_with_lctl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC>, <&kp RBRC>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
+        };
+    };
+};
+
 // {
 //    behaviors {
 //        spacelayer5: space_layer5 {
@@ -261,7 +283,7 @@
 				// &trans  	&trans      &trans     &trans     &trans        &trans     &trans     &trans     &leftback     &downpgdown  &rightforward  &kp K_CMENU
 				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
-				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &lbrcmod  &rbrcmod    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 
 			>;
@@ -300,7 +322,7 @@
 			bindings = <
 				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
-				&trans &trans &trans &trans &trans &trans &trans    &trans &kp LBRC  &kp RBRC    &uppgup       &trans
+				&trans &trans &trans &trans &trans &trans &trans    &trans &lbrcmod  &rbrcmod    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
 		};
