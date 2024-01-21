@@ -261,8 +261,11 @@
 	behaviors {
         	rot_kp: sensor_rotate_kp {
             	compatible = "zmk,behavior-sensor-rotate";
+	compatible = "alps,ec11";
+        a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;
             	#sensor-binding-cells = <0>;
-		steps = <80>;
             	bindings = <&vldnlalstab>, <&vluplatab>;
         	};
     	};
