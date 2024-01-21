@@ -174,6 +174,30 @@
     };
 };
 
+/ {
+    behaviors {
+        voldown_altshifttab: voldown_altshifttab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp C_VOL_DN>, <&kp LS(TAB)>;
+            mods = <(MOD_LALT|MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        volup_alttab: volup_alttab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp C_VOL_UP>, <&kp TAB>;
+            mods = <(MOD_LALT|MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+    };
+};
+
 // {
 //    behaviors {
 //        spacelayer5: space_layer5 {
@@ -260,7 +284,8 @@
 			    // 	&kp LCTL  &kp LALT &trans   &trans   &trans &spacelayers &trans &trans   &kp RGUI  &kp END  &mo 3     &to 4
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			// sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp voldown_altshifttab volup_alttab>;
 		};
 
 		numsymb_1 {
