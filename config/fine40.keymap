@@ -264,7 +264,7 @@
 		};
 
 		numsymb_1 {
-			label = "numb & symb";
+			label = "num/symb";
 			bindings = <
 				// &kp GRAVE &kp N1 &kp N2     &kp N3 &kp N4 &kp N5 &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp DEL
 				// &trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
@@ -315,7 +315,7 @@
 		};
 
 		game_numsymb_5 {
-			label = "numb & symb (game)";
+			label = "num/symb";
 			bindings = <
 				&kp GRAVE &kp N1     &kp N2     &threeamps           &kp N4 &kp N5 &kp N6     &sevenunder &eightpipe &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &kp LA(LC(LS(SEMI))) &trans &trans &kp MINUS  &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
@@ -325,7 +325,7 @@
 		};
 
 		game_nav_6 {
-			label = "navy (game)";
+			label = "navy";
 			bindings = <
 				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
@@ -335,7 +335,7 @@
 		};
 
 		game_fn_7 {
-			label = "control (game)";
+			label = "control";
 			bindings = <
 				&trans     &kp F1       &kp F2     &kp F3     &kp F4     &kp F5  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10 &kp DEL
 				&trans 	   &kp F11	&kp F12    &trans     &trans     &trans  &bt BT_PRV &bt BT_PRV &bt BT_NXT &bt BT_NXT &trans  &trans
