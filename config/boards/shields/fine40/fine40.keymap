@@ -260,9 +260,9 @@
 / {
 	behaviors {
         	rot_kp: sensor_rotate_kp {
-            	compatible = "zmk,behavior-sensor-rotate-var";
-            	#sensor-binding-cells = <2>;
-            	bindings = <&kp>, <&kp>;
+            	compatible = "zmk,behavior-sensor-rotate";
+            	#sensor-binding-cells = <0>;
+            	bindings = <&vldnlalstab>, <&vluplatab>;
         	};
     	};
 
@@ -293,7 +293,7 @@
 			>;
 
 			// sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-			sensor-bindings = <&rot_kp &vldnlalstab &vluplatab>;
+			sensor-bindings = <&rot_kp>;
 			// sensor-bindings = <&inc_dec_kp LS(TAB) TAB>;
 		};
 
