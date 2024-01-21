@@ -181,7 +181,7 @@
             #binding-cells = <0>;
             bindings = <&kp C_VOL_DN>, <&kp LS(TAB)>;
             mods = <(MOD_LALT|MOD_LCTL)>;
-            //keep-mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
         };
     };
 };
@@ -193,7 +193,7 @@
             #binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp TAB>;
             mods = <(MOD_LALT|MOD_LCTL)>;
-            //keep-mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
         };
     };
 };
@@ -285,7 +285,8 @@
 			>;
 
 			// sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp &vldnlalstab &vluplatab>;
+			// sensor-bindings = <&inc_dec_kp &vldnlalstab &vluplatab>;
+			sensor-bindings = <&inc_dec_kp LS(TAB) TAB>;
 		};
 
 		numsymb_1 {
