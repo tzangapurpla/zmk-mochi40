@@ -261,7 +261,6 @@
 	behaviors {
         	rot_kp: sensor_rotate_kp {
             	compatible = "zmk,behavior-sensor-rotate";
-     triggers-per-rotation = <20>;
             	#sensor-binding-cells = <0>;
             	bindings = <&vldnlalstab>, <&vluplatab>;
         	};
