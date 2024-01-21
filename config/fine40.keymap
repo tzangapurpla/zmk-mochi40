@@ -402,6 +402,8 @@
 				&trans &trans &trans &trans &trans &trans &trans    &trans &lbrcmod  &rbrcmod    &uppgup       &trans
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 			>;
+
+			sensor-bindings = <&rot2_kp>;
 		};
 
 		game_fn_7 {
