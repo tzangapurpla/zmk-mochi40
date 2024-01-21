@@ -198,6 +198,30 @@
     };
 };
 
+/ {
+    behaviors {
+        vldnlalstab2: voldown_altshifttab2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(TAB)>, <&kp LS(TAB)>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        vluplatab2: volup_alttab2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp TAB>, <&kp TAB>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+    };
+};
+
 // {
 //    behaviors {
 //        spacelayer5: space_layer5 {
@@ -266,6 +290,15 @@
         	};
     	};
 
+	behaviors {
+        	rot2_kp: sensor_rotate2_kp {
+            	compatible = "zmk,behavior-sensor-rotate";
+            	#sensor-binding-cells = <0>;
+            	bindings = <&vldnlalstab2>, <&vluplatab2>;
+        	};
+    	};
+
+
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -309,6 +342,7 @@
 				&trans    &trans     &kp LS(N5) &trans               &trans &trans &kp LS(N3) &trans      &lparlbkt  &rparrbkt &bslhexcl  &kp EQUAL
 				&trans    &trans     &trans     &trans               &trans &trans &trans     &trans      &trans     &trans    &trans     &kp C_PP
 			>;
+
 		};
 
 		nav_2 {
@@ -324,6 +358,8 @@
 				&trans &trans &trans &trans &trans &trans &trans    &trans &leftback &downpgdown &rightforward &kp K_CMENU
 
 			>;
+
+			sensor-bindings = <&rot2_kp>;
 		};
 
 		control_3 {
