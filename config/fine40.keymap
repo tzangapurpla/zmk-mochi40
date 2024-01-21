@@ -238,6 +238,7 @@
 		compatible = "zmk,keymap";
 
 		default_layer_0 {
+			   label = "type";
 				// -----------------------------------------------------------------------------------------
 				// |  ESC  |  Q   |  W   |  E   |  R   |  T   |   Y   |  U    |  I   |  O   |   P   | BSPC  |
 				// |  TAB  |  A   |  S   |  D   |  F   |  G   |   H   |  J    |  K   |  L   |   ;   |  '    |
@@ -263,6 +264,7 @@
 		};
 
 		numsymb_1 {
+			label = "numb&symb";
 			bindings = <
 				// &kp GRAVE &kp N1 &kp N2     &kp N3 &kp N4 &kp N5 &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp DEL
 				// &trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
@@ -276,6 +278,7 @@
 		};
 
 		nav_2 {
+			label = "navy";
 			bindings = <
 				// &kp LS(GRAVE)	&kp LS(N1)  &trans     &kp LS(N7) &trans        &trans     &trans     &kp UNDER  &trans        &trans       &kp LS(N6)     &bspcdel
 				// &trans  	&kp LS(N2)  &kp LS(N4) &trans     &trans        &trans     &kp MINUS  &kp FSLH   &kp LS(N8)    &kp PLUS     &trans         &kp PIPE
@@ -290,6 +293,7 @@
 		};
 
 		control_3 {
+			label = "control";
 			bindings = <
 				&sys_reset &kp F1       &kp F2     &kp F3     &kp F4     &kp F5  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10 &kp DEL
 				&trans 	   &kp F11	&kp F12    &trans     &trans     &trans  &bt BT_PRV &bt BT_PRV &bt BT_NXT &bt BT_NXT &trans  &trans
@@ -299,6 +303,7 @@
 		};
 
 		game_4 {
+			label = "game";
 			bindings = <
 				&gresc    &kp Q        &kp W    &kp E    &kp R  &kp T        &kp Y  &kp U    &kp I      &kp O      &kp P     &kp BSPC
 				&kp TAB	  &kp A        &kp S    &kp D    &kp F  &kp G        &kp H  &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
@@ -310,6 +315,7 @@
 		};
 
 		game_numsymb_5 {
+			label = "g_numb&symb";
 			bindings = <
 				&kp GRAVE &kp N1     &kp N2     &threeamps           &kp N4 &kp N5 &kp N6     &sevenunder &eightpipe &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &kp LA(LC(LS(SEMI))) &trans &trans &kp MINUS  &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
@@ -319,6 +325,7 @@
 		};
 
 		game_nav_6 {
+			label = "g_navy";
 			bindings = <
 				&trans &trans &trans &trans &trans &trans &trans    &trans &trans    &trans      &trans        &bspcdel
 				&trans &trans &trans &trans &trans &trans &kp MINUS &trans &trans    &kp PLUS    &trans        &trans
@@ -328,6 +335,7 @@
 		};
 
 		game_fn_7 {
+			label = "g_control";
 			bindings = <
 				&trans     &kp F1       &kp F2     &kp F3     &kp F4     &kp F5  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10 &kp DEL
 				&trans 	   &kp F11	&kp F12    &trans     &trans     &trans  &bt BT_PRV &bt BT_PRV &bt BT_NXT &bt BT_NXT &trans  &trans
