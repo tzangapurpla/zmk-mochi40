@@ -285,7 +285,7 @@
 			>;
 
 			// sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp &vldnlalstab &vluplatab>;
+			sensor-bindings = <&vldnlalstab &vluplatab>;
 			// sensor-bindings = <&inc_dec_kp LS(TAB) TAB>;
 		};
 
