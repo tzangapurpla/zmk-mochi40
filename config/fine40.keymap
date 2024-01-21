@@ -284,8 +284,8 @@
 			    // 	&kp LCTL  &kp LALT &trans   &trans   &trans &spacelayers &trans &trans   &kp RGUI  &kp END  &mo 3     &to 4
 			>;
 
-			// sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp &vldnlalstab &vluplatab>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			// sensor-bindings = <&inc_dec_kp &vldnlalstab &vluplatab>;
 		};
 
 		numsymb_1 {
