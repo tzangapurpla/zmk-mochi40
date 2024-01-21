@@ -264,7 +264,7 @@
 		};
 
 		numsymb_1 {
-			label = "num/symb";
+			label = "num&symb";
 			bindings = <
 				// &kp GRAVE &kp N1 &kp N2     &kp N3 &kp N4 &kp N5 &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp DEL
 				// &trans    &trans &trans     &trans &trans &trans &kp MINUS &kp FSLH  &kp LS(N8) &kp PLUS   &trans     &kp BSLH
@@ -315,7 +315,7 @@
 		};
 
 		game_numsymb_5 {
-			label = "num/symb";
+			label = "num&symb";
 			bindings = <
 				&kp GRAVE &kp N1     &kp N2     &threeamps           &kp N4 &kp N5 &kp N6     &sevenunder &eightpipe &kp N9    &zerocaret &kp DEL
 				&trans    &kp LS(N2) &kp LS(N4) &kp LA(LC(LS(SEMI))) &trans &trans &kp MINUS  &kp FSLH    &kp LS(N8) &kp PLUS  &trans     &kp PIPE
